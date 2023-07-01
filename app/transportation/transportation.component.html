@@ -1,0 +1,17 @@
+<br><h1>Transportation Schedules and Itineraries</h1>
+<form action="">
+<table>
+  <tr>
+    <th>Departure</th>
+    <th>Arrival</th>
+    <th>Date</th>
+    <th>Time</th>
+  </tr>
+  <tr *ngFor="let schedule of schedules">
+    <td>{{schedule.departure}}</td>
+    <td>{{schedule.arrival}}</td>
+    <td>{{schedule.date}}</td>
+    <td>{{schedule.time}}</td>
+  </tr>
+</table>
+</form>

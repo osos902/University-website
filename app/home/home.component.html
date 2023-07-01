@@ -1,0 +1,87 @@
+<body>
+<div class="image-container">
+  <button class="left-button" (click)="changeImage((currentIndex + images.length - 1) % images.length)">&#10094;</button>
+  <img [src]="images[currentIndex]" alt="Current Image" class="new">
+
+  <button class="right-button" (click)="changeImage((currentIndex + 1) % images.length)">&#10095;</button>
+  </div>
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+<br>
+      <div class="containers">
+        <h1 class="display-3" style="text-align:center ; color: black; "><strong>أكاديمية الشروق
+        </strong></h1><br><h5>أكاديمية الشروق هى أكاديمية خاصة مصرية و لقد أنشئت عام 1995 ميلاديا و تحتوى على ثلاث معاهد</h5>
+<br>
+      </div>
+
+      <video   controls class="video" start="100">
+        <source src="assets/vedio/2.mp4" type="video/mp4">
+        <source src="https://drive.google.com/file/d/1pv5hI2dH5acsTEyrokGyH7YgD0fy8zcl/view?usp=share_link" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+
+      <p class="text">
+     More information about Aacadmy&nbsp;
+      <a routerLink="/view" target="_blank"> el Shrouck</a>.
+      </p>
+    </div>
+<br>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <img class="icons" src="assets\imge\feess.jpg" alt="">
+          <h2 class="hello">رسوم الطالب</h2>
+          <p>لمعرفة المصاريف وطرق الدفع </p>
+          <p><a class="btn btn-secondary" href="#" role="button">عرض التفاصيل »</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="icons" src="assets\imge\req.png" alt="">
+          <h2 class="hello">المتطلبات</h2>
+          <p>لمعرفة شروط الانضمام          </p>
+          <p><a class="btn btn-secondary" routerLink="/test" role="button">عرض التفاصيل »</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="icons" src="assets\imge\e-learn.webp" alt=""><h2 class="hello">التعليم الإلكتروني</h2>
+          <p>نظام تفاعلي لتقدم البرامج الأكاديمية من خلال الشبكات الإلكترونية</p>
+          <p><a class="btn btn-secondary" href="#" role="button">عرض التفاصيل »</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="icons" src="assets/imge/blog.png" alt=""><h2 class="hello">الانشطة</h2>
+          <p>إعلانات الأنشطة والمسابقات</p>
+          <p><a class="btn btn-secondary" routerLink="/blog" role="button">عرض التفاصيل »</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="icons" src="assets/imge/transport.jpg" alt="">
+          <h2 class="hello">جداول النقل</h2>
+          <p>توقيت الموصلات ومسارات الرحلات الرئيسية والإضافية </p>
+          <p><a class="btn btn-secondary" routerLink="/transport" role="button">عرض التفاصيل »</a></p>
+        </div>
+        <div class="col-md-4">
+          <img class="icons" src="assets/imge/chatbot.jpg" alt="">
+          <h2 class="hello">الشات بوت</h2>
+          <p>روبوت الدردشة هو برنامج كمبيوتر مصمم لمحاكاة محادثة مع المستخدمين ، خاصة عبر الإنترنت أو من خلال تطبيقات المراسلة.</p>
+          <p><a class="btn btn-secondary" href="http://elprince99.pythonanywhere.com/" role="button" style="align-items: center;">عرض التفاصيل »</a></p>
+        </div>
+      </div>
+
+<br>
+
+    </div> <!-- /container -->
+
+  </main>
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../dist/js/bootstrap.min.js"></script>
+
+
+</body>

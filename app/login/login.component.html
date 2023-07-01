@@ -1,0 +1,29 @@
+
+<form action="index.html" method="post" (submit)="login()">
+<form action="action_page.php" method="post" (submit)="login()">
+  <div class="imgcontainer">
+    <img  src="assets\imge\logo.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" >
+    <label for="email" type="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email"  [(ngModel)]="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw"  [(ngModel)]="password" required>
+
+    <button type="submit" >Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#F4F7F8">
+   <!-- <button type="button" class="cancelbtn">Cancel</button>-->
+    <span class="psw">Forgot <a routerLink="/forgot-password" role="button">password?</a></span>
+  </div>
+  <div class="container2" style="background-color:#F4F7F8">
+    <button routerLink="/signup" type="button" class="cancelbtn" >Sign Up</button>
+  </div>
+</form></form>
+
