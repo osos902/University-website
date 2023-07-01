@@ -1,0 +1,44 @@
+
+
+
+
+
+.icon {
+width: 52px;
+right: 2px;
+height: 52px;
+
+position: fixed;
+font-style: times;
+margin-right: 1%;
+
+}
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666;
+top: 0%;
+width: 100%;
+scroll-behavior: smooth;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+router-outlet {
+ transition: 1000ms;
+scroll-behavior: smooth;
+}
